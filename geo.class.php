@@ -50,7 +50,7 @@ class Geo {
 			return false;
 		}
 		$arResult = array();
-		$res = $this->connect -> query("SELECT * FROM `cities` WHERE `city` LIKE '%". $city ."%'");
+		$res = $this->connect -> query("SELECT * FROM `cities` WHERE `city` LIKE '". $city ."%'");
 		while ($result=$res->fetch_assoc()){
 			$arResult[] = $result;
 		}
