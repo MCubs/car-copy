@@ -1,0 +1,7 @@
+AddDefaultCharset UTF-8    
+SetEnv PYTHONIOENCODING utf8
+DirectoryIndex index.php
+php_flag display_errors on
+
+RewriteEngine On
+RewriteRule ^(.*)$ index.php
